@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">TAMBAH DATA MAKUL</div>
 
@@ -33,10 +33,9 @@
                                     <button type="submit" class="btn btn-md btn-primary">SIMPAN</button> 
                                     <a href="{{ route('makul') }}" class="btn btn-md btn-danger">BATAL</a>
                                 </div>
-
                             </div>
                         </div>
-                    
+
                     </form>
                 </div>
             </div>

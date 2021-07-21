@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
                     DATA MAKUL
@@ -20,9 +20,12 @@
                                 <th>SKS</th>
                                 <th>AKSI</th>
                             </tr>
+                            @php
+                                $no = 1;
+                            @endphp 
                             @foreach ($makul as $mk)
                             <tr>
-                                <td>{{ $mk->id }}</td>
+                                <td>{{ $no++ }}</td>
                                 <td>{{ $mk->kd_makul }}</td>
                                 <td>{{ $mk->nama_makul }}</td>
                                 <td>{{ $mk->sks }}</td>

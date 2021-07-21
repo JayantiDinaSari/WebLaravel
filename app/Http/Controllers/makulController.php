@@ -44,6 +44,7 @@ class makulController extends Controller
     {
         $makul = makul::find($id);
         $makul->delete();
+        toast('Hore Data Berhasil Di Hapus!','success');
         return redirect()->route('makul');
     }
 }
